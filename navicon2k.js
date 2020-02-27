@@ -24,10 +24,10 @@ const FAILURE_RES = { state: 'FAILURE' }
 
 const state_commands = {
     // "auto":    "%s,3,126208,%s,%s,17,01,63,ff,00,f8,04,01,3b,07,03,04,04,40,00,05,ff,ff",
-    "auto":    "%s,2,130850,%s,%s,14,0c,41,9f,01,ff,ff,0a,09,00,ff,ff,ff,ff,ff",
+    "auto":    "%s,2,130850,%s,%s,13,0c,41,9f,01,ff,ff,0a,09,00,ff,ff,ff,ff",
     "wind":    "", //""%s,3,126208,%s,%s,17,01,63,ff,00,f8,04,01,3b,07,03,04,04,00,01,05,ff,ff",
     "route":   "", //""%s,3,126208,%s,%s,17,01,63,ff,00,f8,04,01,3b,07,03,04,04,80,01,05,ff,ff",
-    "standby": "%s,2,130850,%s,%s,14,0c,41,9f,01,ff,ff,0a,06,00,ff,ff,ff,ff,ff"
+    "standby": "%s,2,130850,%s,%s,13,0c,41,9f,01,ff,ff,0a,06,00,ff,ff,ff,ff"
 }
 const keys_code = {
     "+1":      "00,03",
@@ -110,7 +110,7 @@ module.exports = function(app) {
     if ( !state_commands[value] ) {
       return { message: `Invalid state: ${value}`, ...FAILURE_RES }
     } else {
-      var msg = util.format(state_commands[value], (new Date()).toISOString(), default_src, deviceid)
+      var msg = util.format(state_commands[value], (new Date()).toISOString(), default_src, 255)
       sendN2k([msg])
       return SUCCESS_RES
     }
