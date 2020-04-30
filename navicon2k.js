@@ -39,7 +39,7 @@ const keys_code = {
     // "+1+10":   "22,dd"
 }
 
-const key_command = "%s,2,130850,%s,%s,8,41,9f,01,ff,ff,0a,%s"
+const key_command = "%s,2,130850,%s,%s,8,41,9f,01,ff,ff,0a,%s,00,ff,ff"
 // const heading_command = "%s,3,126208,%s,%s,14,01,50,ff,00,f8,03,01,3b,07,03,04,06,%s,%s"
 // "2,130850,%s,%s,14,0c,41,9f,01,ff,ff,0a,1a,00,01,fd,95,ff,ff" 220 degrees
 const heading_command = "%s,2,130850,%s,%s,14,0c,41,9f,01,ff,ff,0a,1a,00,01,%s,%s,ff,ff"
