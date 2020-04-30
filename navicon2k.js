@@ -51,7 +51,7 @@ const confirm_tack = "%s,2,126720,%s,%s,7,3b,9f,f0,81,90,00,03"
 const keep_alive = "%s,7,65384,%s,255,8,3b,9f,00,00,00,00,00,00"
 const keep_alive2 = "%s,7,126720,%s,255,7,3b,9f,f0,81,90,00,03"
 
-const default_src = '44'
+const default_src = '4'
 const autopilot_dst = '255'
 const everyone_dst = '255'
 
