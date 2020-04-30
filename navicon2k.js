@@ -24,11 +24,11 @@ const FAILURE_RES = { state: 'FAILURE' }
 
 const state_commands = {
     // "auto":    "%s,3,126208,%s,%s,17,01,63,ff,00,f8,04,01,3b,07,03,04,04,40,00,05,ff,ff",
-    "auto":    "%s,2,130850,%s,%s,12,41,9f,01,ff,ff,0a,09,00,ff,ff,ff",
-    "wind":    "%s,2,130850,%s,%s,12,41,9f,01,ff,ff,02,0e,00,ff,ff,ff",
+    "auto":    "%s,2,130850,%s,%s,0c,41,9f,01,ff,ff,0a,09,00,ff,ff,ff",
+    "wind":    "%s,2,130850,%s,%s,0c,41,9f,01,ff,ff,02,0e,00,ff,ff,ff",
     // "wind":    "", //""%s,3,126208,%s,%s,17,01,63,ff,00,f8,04,01,3b,07,03,04,04,00,01,05,ff,ff",
     "route":   "", //""%s,3,126208,%s,%s,17,01,63,ff,00,f8,04,01,3b,07,03,04,04,80,01,05,ff,ff",
-    "standby": "%s,2,130850,%s,%s,12,41,9f,01,ff,ff,0a,06,00,ff,ff,ff"
+    "standby": "%s,2,130850,%s,%s,0c,41,9f,01,ff,ff,0a,06,00,ff,ff,ff"
 }
 const keys_code = {
     "+1":      "00,03,ae,00",
