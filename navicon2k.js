@@ -39,7 +39,7 @@ const keys_code = {
     // "+1+10":   "22,dd"
 }
 
-const key_command = "%s,2,130850,%s,%s,8,41,9f,01,ff,ff,0a,%s,00,ff,ff"
+const key_command = "%s,2,130850,%s,%s,12,41,9f,01,ff,ff,0a,%s,00,ff,ff"
 // const heading_command = "%s,3,126208,%s,%s,14,01,50,ff,00,f8,03,01,3b,07,03,04,06,%s,%s"
 // "2,130850,%s,%s,14,0c,41,9f,01,ff,ff,0a,1a,00,01,fd,95,ff,ff" 220 degrees
 const heading_command = "%s,2,130850,%s,%s,14,0c,41,9f,01,ff,ff,0a,1a,00,01,%s,%s,ff,ff"
@@ -51,7 +51,7 @@ const confirm_tack = "%s,2,126720,%s,%s,7,3b,9f,f0,81,90,00,03"
 const keep_alive = "%s,7,65384,%s,255,8,3b,9f,00,00,00,00,00,00"
 const keep_alive2 = "%s,7,126720,%s,255,7,3b,9f,f0,81,90,00,03"
 
-const default_src = '4'
+const default_src = '7'
 const autopilot_dst = '255'
 const everyone_dst = '255'
 
