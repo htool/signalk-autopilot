@@ -31,15 +31,15 @@ const state_commands = {
     "standby": "%s,2,130850,%s,%s,12,41,9f,01,ff,ff,0a,06,00,ff,ff,ff"
 }
 const keys_code = {
-    "+1":      "00,03",
-    // "+10":     "08,f7",
-    "-1":      "00,02",
-    // "-10":     "06,f9",
+    "+1":      "00,03,ae,00",
+    "+10":     "00,03,d1,06",
+    "-1":      "00,02,ae,00",
+    "-10":     "00,02,d1,06",
     // "-1-10":   "21,de",
     // "+1+10":   "22,dd"
 }
 
-const key_command = "%s,7,126720,%s,%s,22,3b,9f,f0,81,86,21,%s,ff,ff,ff,ff,ff,c1,c2,cd,66,80,d3,42,b1,c8"
+const key_command = "%s,2,130850,%s,%s,8,41,9f,01,ff,ff,0a,%s"
 // const heading_command = "%s,3,126208,%s,%s,14,01,50,ff,00,f8,03,01,3b,07,03,04,06,%s,%s"
 // "2,130850,%s,%s,14,0c,41,9f,01,ff,ff,0a,1a,00,01,fd,95,ff,ff" 220 degrees
 const heading_command = "%s,2,130850,%s,%s,14,0c,41,9f,01,ff,ff,0a,1a,00,01,%s,%s,ff,ff"
