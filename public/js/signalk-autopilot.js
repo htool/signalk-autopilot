@@ -101,7 +101,7 @@ var displayByPathParams = {
 const defaultPpreferedDisplayMode = {
   wind: 'environment.wind.angleApparent',
   route: 'navigation.headingMagnetic',
-  auto: 'navigation.headingMagnetic',
+  auto: 'steering.autopilot.target.headingMagnetic',
   standby: 'navigation.headingMagnetic'
 }
 
@@ -509,11 +509,11 @@ var setPilotStatus = function(value) {
     if (typeValIconDiv.innerHTML !== typeVal)
     typeValIconDiv.innerHTML = typeVal;
   } else { typeValIconDiv.innerHTML = '' }
-  
+
   if (value === '') {
     setHeadindValue('');
     pilotStatusDiv.innerHTML = noPilot;
-  } else { 
+  } else {
       if (pilotStatusDiv.innerHTML !== value) {
         setHeadindValue('');
         pilotStatusDiv.innerHTML = value;
