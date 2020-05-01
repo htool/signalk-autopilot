@@ -101,7 +101,7 @@ var displayByPathParams = {
 const defaultPpreferedDisplayMode = {
   wind: 'environment.wind.angleApparent',
   route: 'navigation.headingMagnetic',
-  auto: 'steering.autopilot.target.headingMagnetic',
+  auto: 'navigation.headingMagnetic',
   standby: 'navigation.headingMagnetic'
 }
 
