@@ -101,7 +101,7 @@ var displayByPathParams = {
 const defaultPpreferedDisplayMode = {
   wind: 'environment.wind.angleApparent',
   route: 'navigation.headingMagnetic',
-  auto: 'steering.autopilot.target.headingMagnetic',
+  auto: 'navigation.headingMagnetic',
   standby: 'navigation.headingMagnetic'
 }
 
@@ -383,11 +383,6 @@ var wsConnect = function() {
             },
             {
               "path": "environment.wind.angleTrueWater",
-              "format": "delta",
-              "minPeriod": 900
-            },
-            {
-              "path": "steering.autopilot.target.headingMagnetic",
               "format": "delta",
               "minPeriod": 900
             },
